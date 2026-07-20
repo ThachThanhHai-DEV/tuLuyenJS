@@ -82,3 +82,26 @@ console.log(`🧡 Email vừa nhập => ${email}`);
 console.log("Kiểm tra email => ", email.includes('@'&&".") ? "Email hợp lệ" : "Email không hợp lệ")
 console.log("🧡 tên trước @ ",email.slice(0,email.indexOf('@')));
 console.log("🧡 tên sau @ ",email.slice(email.indexOf('@')+1));
+
+//CHUYỂN ĐỔI KIỂU DỮ LIỆU V2//
+let s_v2 ="42"
+console.log("🧡 Gía trị s_v2 =>", s_v2);
+console.log("🧡 Number(s_v2) + 8 => ", Number(s_v2)+8);
+console.log("🧡 parseInt(s_v2) + 8 => ", parseInt(s_v2)+8);
+console.log("🧡 +s_v2 +8 ", +s_v2 +8 );
+
+ (Number.isNaN(Number('3.14'))) ? console.log("🧡Number('3.14') NaN") : console.log("🧡Number('3.14') not NaN");
+ (Number.isNaN(parseInt('3.14'))) ? console.log("🧡parseInt('3.14') NaN") : console.log("🧡parseInt('3.14') not NaN");
+ (Number.isNaN(Number('42px'))) ? console.log("🧡Number('42px') NaN") : console.log("🧡Number('42px') not NaN");
+ (Number.isNaN(parseInt('42px'))) ? console.log("🧡parseInt('42px') NaN") : console.log("🧡parseInt('42px') not NaN");
+ (Number.isNaN(Number('abc'))) ? console.log("🧡Number('abc') NaN") : console.log("Number('abc') not NaN");
+
+ let gia ='150000'
+ let soLuong ='abc'
+
+ if (Number.isNaN(Number(soLuong))) {
+    console.log("Vui lòng nhập đúng số lượng");
+ } else {
+    console.log("Tổng tiền là ", (gia*soLuong).toFixed());
+
+ }
