@@ -103,5 +103,6 @@ console.log("🧡 +s_v2 +8 ", +s_v2 +8 );
     console.log("Vui lòng nhập đúng số lượng");
  } else {
     console.log("Tổng tiền là ", (gia*soLuong).toFixed());
-
  }
+
+ 
